@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  background-color: #efedd6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#form {
+  border: dotted 5px black;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+#animeDiv {
+  color: rgba(5, 103, 141, 0.975);
+  width: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+h1 {
+  color: rgb(96, 1, 1);
+  text-decoration: double underline;
+}
+
+#inputText,
+#inputNumber,
+#inputSorting {
+  background-color: rgba(5, 103, 141, 0.975);
+  border: 5px solid rgb(96, 1, 1);
+  font-family: "Secular One", sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.466);
+}
+
+button,
+#randomButton,
+#downloadButton {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Secular One", sans-serif;
+  font-weight: 300;
+  color: rgba(5, 103, 141, 0.975);
+  background-color: rgb(96, 1, 1);
+  text-align: center;
+  transition: all 0.2s;
+  border: black solid 5px;
+  margin: 10px;
+}
+#button:hover,
+#randomButton:hover,
+#downloadButton:hover {
+  background-color: #4095c6;
+}
+
+#divForThePictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.firstBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+#boxContainer {
+  padding-bottom: 100px;
+}

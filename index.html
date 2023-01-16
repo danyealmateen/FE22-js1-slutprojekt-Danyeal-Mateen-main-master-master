@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="lib/anime.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>FLICKR Project</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" id="inputText" placeholder="Search..." />
+      <input type="number" id="inputNumber" placeholder="Number of img's..." />
+      <br>
+      <!-- Paragrafen som animeras -->
+      <div id="animeDiv"></div>
+
+     <!-- Radioknappar för bildstorlekarna -->
+      <h3>Image sizes:</h3>
+      <div id="sortingSizes">
+        <label for="radioButtonSmall">Small</label>
+        <input id="radioButtonSmall" name="radioButton" type="radio" />
+        <br />
+        <label for="radioButtonMedium">Medium</label>
+        <input id="radioButtonMedium" name="radioButton" type="radio" />
+        <br />
+        <label for="radioButtonLarge">Large</label>
+        <input id="radioButtonLarge" name="radioButton" type="radio" />
+      </div>
+
+      <!-- Listan där man kan välja att sortera efter datum, "interestingness" samt relevans -->
+      <h3>Sort by:</h3>
+        <input id="inputSorting" list="sortings" name="myBrowser" placeholder="Sort by..."/></label>
+      <datalist id="sortings">
+        <option value="Date posted"></option>
+        <option value="Interestingness"></option>
+        <option value="Relevance"></option>
+      </datalist>
+      <br>
+      <button id="button">Search</button>
+      <button id="downloadButton">Recieve a Thank You file</button>
+      <p>PS. Dont forget to scroll to see the rest of your pictures!</p>
+    </form>
+    <div id="errorMessageContainer"></div>
+    <div id="boxContainer"></div>
+   
+  </body>
+</html>
